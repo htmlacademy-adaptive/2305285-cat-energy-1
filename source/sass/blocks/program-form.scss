@@ -6,5 +6,11 @@
 }
 
 .program-form__container {
-  padding: 27px 35px;
+  min-width: 320px;
+  padding-top: 27px;
+}
+
+.program-form__title {
+  line-height: 36px;
+  margin-bottom: 25px;
 }
