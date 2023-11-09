@@ -1,0 +1,17 @@
+.result {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.result__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+  padding-top: 22px;
+  padding-bottom: 20px;
+}
+
+.result__item:not(:last-child) {
+  margin-bottom: 14px;
+}

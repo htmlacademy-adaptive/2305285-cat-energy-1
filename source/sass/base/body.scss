@@ -5,7 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  color: #000000;
+  color: #444444;
   padding: 0 20px;
 }
 
@@ -23,10 +23,14 @@ body {
   color: hsl(0, 0%, 100%);
   background-color: hsl(97, 53%, 47%);
   text-decoration: none;
+  border: none;
   cursor: pointer;
   user-select: none;
 }
 
 .link {
+  font-family: "Oswald", "Arial", sans-serif;
   text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
 }

@@ -11,22 +11,22 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo logo" href="index.html">
+    <a class="main-header__logo logo link" href="index.html">
       <img class="logo__image logo__image--mobile" src="img/logo-mobile.svg" alt="Иконка сайта Кэт энерджи" width="33"
         height="38">
       <img class="logo__text" src="img/logo-text.svg" alt="Логотип сайта Кэт энерджи" width="110" height="18">
     </a>
     <nav class="navigation">
       <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="navigation__list">
+        <ul class="navigation__list list">
           <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
+            <a class="navigation__link link" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+            <a class="navigation__link link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="navigation__item navigation__item--current">
-            <a class="navigation__link">Подбор программы</a>
+            <a class="navigation__link link">Подбор программы</a>
           </li>
         </ul>
     </nav>
@@ -64,7 +64,7 @@
             <div class="program-selection__result result">
               <fieldset class="result__group">
                 <legend class="visually-hidden">Планируемый результат</legend>
-                <ul class="result__list">
+                <ul class="result__list list">
                   <li class="result__item">
                     <label class="result__control" for="result__slim">Похудение</label>
                     <input class="result__input" type="radio" id="result__slim" name="result" value="slim" checked>
@@ -104,7 +104,7 @@
           <div class="program-selection__optionally optionally">
             <h3 class="optionally__title subtitle">Дополнительно</h3>
             <fieldset class="optionally__group">
-              <ul class="optionally__list">
+              <ul class="optionally__list list">
                 <li class="optionally__item">
                   <label class="optionally__label" for="optionally__sweetener">Сахарозаменитель</label>
                   <input class="optionally__input" type="checkbox" id="optionally__sweetener" name="sweetener" checked>
@@ -147,28 +147,29 @@
         </div>
       </div>
 
+
       <div class="main-footer__logo logo">
         <a class="logo__link" href="index.html">
           <img class="logo__text" src="img/logo-text.svg" alt="Логотип сайта Кэт энерджи" width="110" height="18">
         </a>
       </div>
-      <ul class="main-footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Ютуб</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-      </ul>
+        <ul class="main-footer__social social list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+        </ul>
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <b class="copyright__text">HTML Academy</b>

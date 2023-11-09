@@ -1,5 +1,9 @@
 .main-footer {
-  width: 320px;
   padding-top: 25px;
   padding-bottom: 40px;
+}
+
+.main-footer__container {
+  background-color: hsl(0, 0%, 95%);
+  padding: 40px 20px;
 }

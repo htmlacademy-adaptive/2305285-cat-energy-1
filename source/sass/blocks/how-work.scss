@@ -1,3 +1,12 @@
 .how-work {
   margin-bottom: 50px;
 }
+
+.how-work__title {
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+
+.how-work__item:not(:last-child) {
+  margin-bottom: 25px;
+}
