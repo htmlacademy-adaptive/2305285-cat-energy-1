@@ -1,7 +1,7 @@
 .program-form {
   width: 100%;
   color: #ffffff;
-  background-color: hsla(97, 53%, 47%, 0.85);
+  background: linear-gradient(to top, #ffffff 0%, #ffffff 302px, #69b738d9 302px, #69b738d9 100%);
   margin-bottom: 20px;
   line-height: 14px;
 }
@@ -21,4 +21,9 @@
 
 .program-form__slogan {
   text-transform: uppercase;
+  margin-bottom: 300px;
+}
+
+.program-form__link {
+  padding: 10px 44px;
 }
