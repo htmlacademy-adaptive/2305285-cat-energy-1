@@ -1,0 +1,44 @@
+.product__card {
+  padding: 20px 20px 25px 20px;
+}
+
+.product__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+}
+
+.product__image {
+  display: block;
+  object-fit: contain;
+}
+
+.product__parameter {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 17px;
+}
+
+.parameter__description {
+  margin: 0;
+}
+
+.product__card--more {
+  padding: 25px 20px;
+}
+
+.product__title--more {
+  margin-bottom: 8px;
+}
+
+.product__subtitle {
+  font-size: 12px;
+  margin-bottom: 21px;
+}
+
+.product__more {
+  color: #444444;
+  background-color: #f2f2f2;
+}
