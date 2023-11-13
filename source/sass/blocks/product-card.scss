@@ -5,6 +5,7 @@
 
 .product__title {
   font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #222222;
@@ -26,18 +27,32 @@
   margin: 0;
 }
 
+.product__order,
+.product__more {
+  @include button;
+}
+
 .product__card--more {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
 .product__title--more {
+  font-weight: 400;
   margin-bottom: 8px;
 }
 
 .product__subtitle {
   font-size: 12px;
   margin-bottom: 21px;
+}
+
+.product__list {
+  @include list;
+}
+
+.product__link {
+  @include link;
 }
 
 .product__more {

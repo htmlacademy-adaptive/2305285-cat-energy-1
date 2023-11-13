@@ -11,6 +11,7 @@
 }
 
 .application__title {
+  @include headline;
   line-height: 36px;
   margin-bottom: 37px;
 }
@@ -27,4 +28,8 @@
   font-size: 14px;
   text-transform: none;
   line-height: 16px;
+}
+
+.application__button {
+  @include button;
 }

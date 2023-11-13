@@ -1,21 +1,17 @@
-body {
+@mixin list {
   margin: 0;
-  min-height: 100%;
-  max-width: 360px;
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  color: #444444;
-  padding: 0 20px;
-}
-
-.list {
   padding: 0;
-  margin: 0;
   list-style: none;
 }
 
-.button {
+@mixin link {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+@mixin button {
   width: 100%;
   display: inline-block;
   font-family: "Oswald", "Arial", sans-serif;
@@ -32,14 +28,23 @@ body {
   padding: 10px 44px;
 }
 
-.link {
+@mixin headline {
   font-family: "Oswald", "Arial", sans-serif;
-  text-decoration: none;
-  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+}
+
+@mixin subtitle {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
   color: #000000;
 }
 
-.input {
+@mixin input {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   text-transform: uppercase;

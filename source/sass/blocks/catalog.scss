@@ -4,5 +4,6 @@
 }
 
 .catalog__title {
+  @include headline;
   margin-bottom: 40px;
 }

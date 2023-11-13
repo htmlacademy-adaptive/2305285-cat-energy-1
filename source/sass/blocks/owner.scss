@@ -4,10 +4,15 @@
 }
 
 .owner__title {
+  @include subtitle;
   line-height: 26px;
   margin-bottom: 35px;
 }
 
 .owner__email {
   margin-bottom: 14px;
+}
+
+.owner__input {
+  @include input;
 }

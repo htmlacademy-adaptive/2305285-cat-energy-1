@@ -4,8 +4,13 @@
 }
 
 .additionally__title {
+  @include subtitle;
   line-height: 24px;
   margin-bottom: 35px;
+}
+
+.additionally__list {
+  @include list;
 }
 
 .additionally__item {
@@ -14,6 +19,7 @@
 }
 
 .additionally__link {
+  @include link;
   font-size: 16px;
   line-height: 16px;
   color: #222222;
@@ -27,4 +33,8 @@
 
 .additionally__parameter-description {
   margin: 0;
+}
+
+.additionally__order {
+  @include button;
 }

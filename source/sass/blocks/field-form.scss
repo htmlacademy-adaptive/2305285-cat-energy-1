@@ -7,3 +7,7 @@
 .field-form__weight {
   padding-bottom: 14px;
 }
+
+.field-form__input {
+  @include input;
+}

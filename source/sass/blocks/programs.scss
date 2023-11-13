@@ -1,0 +1,29 @@
+.programs__container {
+  margin-bottom: 20px;
+}
+
+.programs__item {
+  background-color: #f2f2f2;
+  padding: 30px 20px 18px 20px;
+}
+
+.programs__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.programs__title {
+  @include subtitle;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.programs__description {
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.programs__link {
+  @include link;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}

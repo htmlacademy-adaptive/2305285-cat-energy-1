@@ -12,6 +12,7 @@
 }
 
 .program-form__title {
+  @include headline;
   line-height: 36px;
   color: #ffffff;
   margin-bottom: 25px;
@@ -25,5 +26,6 @@
 }
 
 .program-form__link {
+  @include button;
   padding: 10px 44px;
 }

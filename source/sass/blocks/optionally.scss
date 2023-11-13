@@ -3,6 +3,7 @@
 }
 
 .optionally__title {
+  @include subtitle;
   margin-bottom: 34px;
 }
 
@@ -10,6 +11,10 @@
   margin: 0;
   padding: 0;
   border: none;
+}
+
+.optionally__list {
+  @include list;
 }
 
 .optionally__item {
