@@ -1,28 +1,34 @@
-.application {
+.program-selection {
   font-family: "Oswald", "Arial", sans-serif;
   padding-top: 27px;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
   font-size: 16px;
   line-height: 18px;
 }
 
-.application__container {
-  text-transform: uppercase;
-}
-
-.application__title {
+.program-selection__title {
   @include headline;
   line-height: 36px;
   margin-bottom: 37px;
 }
 
+.program-selection__owner {
+  padding-top: 26px;
+}
+
+.program-selection__optionally {
+  margin-bottom: 34px;
+}
+
 .program-selection__description {
   color: #000000;
   text-transform: uppercase;
+  font-size: 14px;
+  margin: 0;
   margin-bottom: 39px;
 }
 
-.application__legend {
+.program-selection__legend {
   font-family: "Lato", "Arial", sans-serif;
   color: #000000;
   font-size: 14px;
@@ -30,6 +36,6 @@
   line-height: 16px;
 }
 
-.application__button {
+.program-selection__button {
   @include button;
 }

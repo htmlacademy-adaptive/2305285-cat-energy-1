@@ -1,13 +1,25 @@
 .field-form {
   text-transform: uppercase;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 
-.field-form__name,
-.field-form__weight {
-  padding-bottom: 14px;
+.field-form__title {
+  @include subtitle;
+  line-height: 26px;
+  text-transform: none;
+  margin-bottom: 35px;
+}
+
+.field-form__row {
+  margin: 0;
+  margin-bottom: 14px;
 }
 
 .field-form__input {
   @include input;
+}
+
+.field-form__area {
+  @include input;
+  margin: 0;
 }
