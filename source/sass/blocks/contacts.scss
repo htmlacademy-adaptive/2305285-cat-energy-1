@@ -5,7 +5,6 @@
 }
 
 .contacts__description {
-  font-family: "Oswald", "Arial", sans-serif;
   margin: 0;
   color: #111111;
   font-size: 16px;
@@ -14,7 +13,7 @@
 
 .contacts__addres,
 .contacts__city {
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: $variable-font;
   color: #444444;
   font-size: 14px;
   margin: 0;

@@ -1,7 +1,7 @@
-.example {
-  width: 100%;
+.example__container {
+  @include container;
   background-color: #ebebeb;
-  padding: 25px 0 40px 0;
+  padding: 25px 20px 40px 20px;
 }
 
 .example__title {
@@ -10,18 +10,26 @@
   margin-bottom: 40px;
 }
 
+.example__intro,
+.example__list {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
 .example__number {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $main-font;
   font-size: 24px;
   color: #000000;
   line-height: 24px;
 }
 
 .example__total {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $main-font;
   color: #000000;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .example__slider-list {

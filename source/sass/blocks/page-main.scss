@@ -1,7 +1,6 @@
 .page-main {
   flex-grow: 1;
-  max-width: 320px;
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: $variable-font;
   font-size: 14px;
   line-height: 18px;
   background-color: #ffffff;

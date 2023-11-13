@@ -1,9 +1,14 @@
 .program-selection {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $main-font;
+  padding: 0 20px;
   padding-top: 27px;
   margin-bottom: 32px;
   font-size: 16px;
   line-height: 18px;
+}
+
+.program-selection__container {
+  @include container;
 }
 
 .program-selection__title {
@@ -29,7 +34,7 @@
 }
 
 .program-selection__legend {
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: $variable-font;
   color: #000000;
   font-size: 14px;
   text-transform: none;

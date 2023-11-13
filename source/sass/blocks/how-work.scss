@@ -1,5 +1,7 @@
-.how-work {
+.how-work__container {
+  @include container;
   margin-bottom: 50px;
+  padding: 0 20px;
 }
 
 .how-work__title {
