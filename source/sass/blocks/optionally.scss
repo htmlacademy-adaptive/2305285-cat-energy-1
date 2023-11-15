@@ -1,0 +1,22 @@
+.optionally {
+  padding-bottom: 34px;
+}
+
+.optionally__title {
+  @include subtitle;
+  margin-bottom: 34px;
+}
+
+.optionally__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.optionally__list {
+  @include list;
+}
+
+.optionally__item {
+  margin-bottom: 12px;
+}

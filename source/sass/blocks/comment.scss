@@ -1,0 +1,14 @@
+.comment {
+  padding-bottom: 23px;
+}
+
+.comment__title {
+  @include subtitle;
+  line-height: 26px;
+  margin-bottom: 38px;
+}
+
+.comment__area {
+  @include input;
+  margin: 0;
+}

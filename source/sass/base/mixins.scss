@@ -1,0 +1,62 @@
+@mixin list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin link {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+@mixin button {
+  width: 100%;
+  display: inline-block;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: #69b738;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px 44px;
+}
+
+@mixin headline {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+}
+
+@mixin subtitle {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+  color: #000000;
+}
+
+@mixin input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 14px 15px;
+  line-height: 18px;
+  border: 1px solid #e7e7e7;
+  margin-left: 13px;
+  min-width: 100%;
+}
+
+@mixin container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}

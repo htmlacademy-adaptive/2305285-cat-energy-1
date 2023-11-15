@@ -1,0 +1,40 @@
+.additionally__container {
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.additionally__title {
+  @include subtitle;
+  line-height: 24px;
+  margin-bottom: 35px;
+}
+
+.additionally__list {
+  @include list;
+}
+
+.additionally__item {
+  padding-top: 13px;
+  padding-bottom: 19px;
+}
+
+.additionally__link {
+  @include link;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+}
+
+.additionally__parameter {
+  margin-top: 13px;
+  margin-bottom: 15px;
+  line-height: 14px;
+}
+
+.additionally__parameter-description {
+  margin: 0;
+}
+
+.additionally__order {
+  @include button;
+}

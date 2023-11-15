@@ -1,0 +1,33 @@
+.program-form {
+  width: 100%;
+  color: #ffffff;
+  background: linear-gradient(to top, #ffffff 0%, #ffffff 302px, #69b738d9 302px, #69b738d9 100%);
+  margin-bottom: 20px;
+  line-height: 14px;
+}
+
+.program-form__container {
+  @include container;
+  min-width: 320px;
+  padding: 0 20px;
+  padding-top: 27px;
+}
+
+.program-form__title {
+  @include headline;
+  line-height: 36px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.program-form__slogan {
+  text-transform: uppercase;
+  margin-bottom: 300px;
+  text-align: center;
+}
+
+.program-form__link {
+  @include button;
+  padding: 10px 44px;
+}

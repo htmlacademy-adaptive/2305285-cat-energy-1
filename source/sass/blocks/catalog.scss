@@ -1,0 +1,9 @@
+.catalog {
+  @include container;
+  padding: 27px 20px 35px 20px;
+}
+
+.catalog__title {
+  @include headline;
+  margin-bottom: 40px;
+}

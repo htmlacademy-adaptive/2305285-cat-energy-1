@@ -1,0 +1,33 @@
+.contacts__cooperation {
+  font-style: normal;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+
+.contacts__description {
+  margin: 0;
+  color: #111111;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.contacts__addres,
+.contacts__city {
+  font-family: $variable-font;
+  color: #444444;
+  font-size: 14px;
+  margin: 0;
+}
+
+.contacts--index {
+  background-color: #ffffff;
+}
+
+.contacts__map {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__image {
+  display: block;
+}

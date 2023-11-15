@@ -1,0 +1,10 @@
+.main-header {
+  @include container;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 20px 20px 15px 20px;
+}
+
+.main-header__logo {
+  @include link;
+}

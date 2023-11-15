@@ -1,0 +1,46 @@
+.program-selection {
+  font-family: $main-font;
+  padding: 0 20px;
+  padding-top: 27px;
+  margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.program-selection__container {
+  @include container;
+}
+
+.program-selection__title {
+  @include headline;
+  line-height: 36px;
+  margin-bottom: 37px;
+}
+
+.program-selection__owner {
+  padding-top: 26px;
+}
+
+.program-selection__optionally {
+  margin-bottom: 34px;
+}
+
+.program-selection__description {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 39px;
+}
+
+.program-selection__legend {
+  font-family: $variable-font;
+  color: #000000;
+  font-size: 14px;
+  text-transform: none;
+  line-height: 16px;
+}
+
+.program-selection__button {
+  @include button;
+}

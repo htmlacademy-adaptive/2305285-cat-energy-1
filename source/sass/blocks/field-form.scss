@@ -1,0 +1,25 @@
+.field-form {
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.field-form__title {
+  @include subtitle;
+  line-height: 26px;
+  text-transform: none;
+  margin-bottom: 35px;
+}
+
+.field-form__row {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.field-form__input {
+  @include input;
+}
+
+.field-form__area {
+  @include input;
+  margin: 0;
+}
