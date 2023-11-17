@@ -22,6 +22,7 @@
 }
 
 .program-form__slogan {
+  font-family: $main-font;
   text-transform: uppercase;
   margin-bottom: 300px;
   text-align: center;
@@ -30,4 +31,38 @@
 .program-form__link {
   @include button;
   padding: 10px 44px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-form__container {
+    padding-top: 65px;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .program-form {
+    background: #ffffff;
+  }
+
+  .program-form__title {
+    color: #000000;
+    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 60px;
+    width: 420px;
+    text-align: left;
+  }
+
+  .program-form__slogan {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  .program-form__link {
+    width: 244px;
+    margin-bottom: 525px;
+  }
 }

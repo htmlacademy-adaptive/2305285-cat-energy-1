@@ -11,3 +11,8 @@
   @include link;
 }
 
+@media (min-width: $tablet-width) {
+  .main-header {
+    padding: 25px 30px 15px 30px;
+  }
+}

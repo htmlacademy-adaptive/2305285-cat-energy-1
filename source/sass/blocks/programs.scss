@@ -29,3 +29,30 @@
   padding-top: 4px;
   padding-bottom: 4px;
 }
+
+@media (min-width: $tablet-width) {
+  .programs__container {
+    padding: 0 30px;
+    margin-bottom: 30px;
+  }
+
+  .programs__item {
+    padding: 77px 316px 53px 52px;
+  }
+
+  .programs__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  .programs__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 48px;
+  }
+
+  .programs__link {
+    font-size: 20px;
+  }
+}
