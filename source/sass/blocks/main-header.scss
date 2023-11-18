@@ -16,3 +16,10 @@
     padding: 25px 30px 15px 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    padding: 55px 110px 30px 110px;
+    background: linear-gradient(to right, #ffffff 0%, #ffffff 720px, #69b738d9 720px, #69b738d9 100%);
+  }
+}

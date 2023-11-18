@@ -24,6 +24,7 @@
 .program-form__slogan {
   font-family: $main-font;
   text-transform: uppercase;
+  margin: 0;
   margin-bottom: 300px;
   text-align: center;
 }
@@ -67,5 +68,19 @@
     font-size: 20px;
     line-height: 26px;
     padding: 14px 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-form__container {
+    padding-top: 110px;
+    padding-left: 190px;
+    padding-right: 120px;
+    background: linear-gradient(to right, #ffffff 0%, #ffffff 720px, #69b738d9 720px, #69b738d9 100%);
+    margin-bottom: 82px;
+  }
+
+  .program-form__link {
+    margin-bottom: 185px;
   }
 }

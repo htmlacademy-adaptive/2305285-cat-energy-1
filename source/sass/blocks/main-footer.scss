@@ -73,3 +73,17 @@
     padding: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-footer__container {
+    padding: 0;
+    padding-top: 0;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .main-footer__link {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
+}
