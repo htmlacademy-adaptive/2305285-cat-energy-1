@@ -39,11 +39,14 @@
 }
 
 .product__title--more {
+  font-family: $main-font;
   font-weight: 400;
   margin-bottom: 8px;
+  text-transform: uppercase;
 }
 
 .product__subtitle {
+  margin: 0;
   font-size: 12px;
   margin-bottom: 21px;
 }
@@ -59,4 +62,112 @@
 .product__more {
   color: #444444;
   background-color: #f2f2f2;
+}
+
+@media (min-width: $tablet-width) {
+  .product__list {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    gap: 60px;
+  }
+
+  .product__card {
+    padding: 10px 37px 40px 37px;
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 80px, #f2f2f2 80px, #f2f2f2 100%);
+  }
+
+  .product__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product__image {
+    width: 200px;
+    height: 210px;
+    margin-bottom: 22px;
+  }
+
+  .product__title {
+    width: 135px;
+    order: 2;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .product__parameter {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 32px;
+    display: grid;
+    gap: 10px;
+  }
+
+  .product__parameter-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product__parameter-designation {
+    order: 2;
+  }
+
+  .product__order,
+  .product__more {
+    width: 250px;
+  }
+
+  .product__card--more {
+    padding: 0;
+    background: #ffffff;
+    padding-top: 242px;
+    padding-bottom: 40px;
+  }
+
+  .product__title--more {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 23px;
+  }
+
+  .product__subtitle {
+    width: 170px;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__list {
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    gap: 80px;
+  }
+
+  .product__order {
+    width: 170px;
+  }
+
+  .product__more {
+    width: 170px;
+    padding: 10px 39px;
+  }
+
+  .product__card--more {
+    background: #ffffff;
+    padding: 230px 20px 40px 20px;
+  }
+
+  .product__title--more {
+    margin-bottom: 26px;
+  }
+
+  .product__subtitle {
+    margin-bottom: 80px;
+  }
 }

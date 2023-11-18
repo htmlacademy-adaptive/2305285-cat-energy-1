@@ -73,10 +73,10 @@
 
 @media (min-width: $desktop-width) {
   .program-form__container {
+    background: linear-gradient(to right, #ffffff 0%, #ffffff 720px, #69b738d9 720px, #69b738d9 100%);
     padding-top: 110px;
     padding-left: 190px;
     padding-right: 120px;
-    background: linear-gradient(to right, #ffffff 0%, #ffffff 720px, #69b738d9 720px, #69b738d9 100%);
     margin-bottom: 82px;
   }
 
