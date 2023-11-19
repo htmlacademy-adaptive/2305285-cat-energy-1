@@ -12,7 +12,16 @@
 
 .field-form__row {
   margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.field-form__row:not(:last-child) {
   margin-bottom: 14px;
+}
+
+.field-form__label {
+  display: flex;
 }
 
 .field-form__input {
@@ -22,4 +31,24 @@
 .field-form__area {
   @include input;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .field-form {
+    margin-bottom: 72px;
+  }
+
+  .field-form__row:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .field-form__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+
+  .field-form__area {
+    margin-top: 11px;
+  }
 }

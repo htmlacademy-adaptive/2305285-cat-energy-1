@@ -44,3 +44,38 @@
 .program-selection__button {
   @include button;
 }
+
+@media (min-width: $tablet-width) {
+  .program-selection {
+    padding: 0 70px;
+    padding-top: 27px;
+    margin-bottom: 65px;
+    font-size: 20px;
+  }
+
+  .program-selection__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  .program-selection__description {
+    width: 325px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
+
+  .program-selection__owner {
+    padding-top: 0;
+    margin-bottom: 65px;
+  }
+
+  .program-selection__comment {
+    margin-bottom: 65px;
+  }
+
+  .program-selection__optionally {
+    margin-bottom: 65px;
+  }
+}
