@@ -21,10 +21,15 @@
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 17px;
+  display: grid;
 }
 
 .product__parameter-description {
   margin: 0;
+}
+
+.product__parameter-designation {
+  order: 2;
 }
 
 .product__order,
@@ -53,6 +58,11 @@
 
 .product__list {
   @include list;
+}
+
+.product__parameter-item {
+  display: flex;
+  justify-content: space-between;
 }
 
 .product__link {
@@ -102,17 +112,7 @@
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 32px;
-    display: grid;
     gap: 10px;
-  }
-
-  .product__parameter-item {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .product__parameter-designation {
-    order: 2;
   }
 
   .product__order,
@@ -144,7 +144,6 @@
 
 @media (min-width: $desktop-width) {
   .product__list {
-    display: grid;
     grid-template-columns: repeat(4, 245px);
     gap: 80px;
   }

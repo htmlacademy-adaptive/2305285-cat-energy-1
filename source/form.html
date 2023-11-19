@@ -65,15 +65,15 @@
             <fieldset class="selection__group">
               <legend class="visually-hidden">Планируемый результат</legend>
               <ul class="selection__list">
-                <li class="selection__item">
+                <li class="selection__item selection__item--result">
                   <label class="selection__control" for="slim">Похудение</label>
                   <input class="selection__input" type="radio" id="slim" name="result" value="slim" checked>
                 </li>
-                <li class="selection__item">
+                <li class="selection__item selection__item--result">
                   <label class="selection__control" for="increase">Набор массы</label>
                   <input class="selection__input" type="radio" id="increase" name="result" value="increase">
                 </li>
-                <li class="selection__item">
+                <li class="selection__item selection__item--result">
                   <label class="selection__control" for="help">Не&nbsp;знаю (Нужен ваш совет)</label>
                   <input class="selection__input" type="radio" id="help" name="result" value="help">
                 </li>
@@ -84,7 +84,8 @@
 
         <div class="program-selection__owner field-form">
           <h3 class="field-form__title">Контактные данные (владельца кота)</h3>
-          <p class="field-form__row">
+          <div class="field-form__container">
+            <p class="field-form__row">
             <label class="field-form__label" for="email">E-mail:*</label>
             <input class="field-form__input field-form__input--email-icon" type="email" id="email" name="email"
               placeholder="кuklachev@gmail.com" required>
@@ -94,6 +95,7 @@
             <input class="field-form__input field-form__input--phone-icon" type="tel" id="phone" name="phone"
               placeholder="8 (960) 900-60-90" required>
           </p>
+          </div>
         </div>
 
         <div class="program-selection__comment field-form">
@@ -124,10 +126,12 @@
             </ul>
           </fieldset>
         </div>
-        <small class="program-selection__legend">
-          * &mdash; Обязательные поля
-        </small>
-        <button class="program-selection__button" type="submit">Отправить заявку</button>
+        <div class="program-selection__container-button">
+          <button class="program-selection__button" type="submit">Отправить заявку</button>
+          <small class="program-selection__legend">
+            * &mdash; Обязательные поля
+          </small>
+        </div>
       </form>
     </section>
   </main>

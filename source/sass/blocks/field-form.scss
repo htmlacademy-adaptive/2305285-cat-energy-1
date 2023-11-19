@@ -42,6 +42,11 @@
     margin-bottom: 20px;
   }
 
+  .field-form__input {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
   .field-form__title {
     font-size: 36px;
     line-height: 36px;
@@ -50,5 +55,13 @@
 
   .field-form__area {
     margin-top: 11px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-form__container {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    column-gap: 80px;
   }
 }
