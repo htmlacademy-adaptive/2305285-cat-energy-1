@@ -23,6 +23,10 @@
   line-height: 24px;
 }
 
+.example__description {
+  margin: 0;
+}
+
 .example__total {
   font-family: $main-font;
   color: #000000;
@@ -32,6 +36,81 @@
   margin-bottom: 20px;
 }
 
+.example__expenses,
+.example__amount {
+  margin: 0;
+}
+
 .example__slider-list {
   @include list;
+}
+
+@media (min-width: $tablet-width) {
+  .example__container {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 620px, #ebebeb 620px, #ebebeb 100%);
+    padding: 45px 30px 100px 30px;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  .example__intro {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+
+  .example__list {
+    display: flex;
+    gap: 43px;
+    text-align: center;
+  }
+
+  .example__number {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 11px;
+  }
+
+  .example__description {
+    line-height: 14px;
+  }
+
+  .example__total {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: end;
+  }
+
+  .example__expenses {
+    margin-bottom: 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__container {
+    padding: 0 110px 75px 110px;
+  }
+
+  .example__title {
+    margin-bottom: 146px;
+  }
+
+  .example__intro {
+    width: 436px;
+    margin-bottom: 70px;
+  }
+
+  .example__total {
+    display: flex;
+    text-align: start;
+  }
+
+  .example__expenses {
+    margin-bottom: 0;
+    margin-right: 63px;
+  }
 }
