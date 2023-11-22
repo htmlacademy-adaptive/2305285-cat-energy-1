@@ -46,8 +46,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .example__container {
+  .example {
     background: linear-gradient(to bottom, #ffffff 0%, #ffffff 620px, #ebebeb 620px, #ebebeb 100%);
+  }
+
+  .example__container {
     padding: 45px 30px 100px 30px;
   }
 
@@ -92,6 +95,7 @@
 
 @media (min-width: $desktop-width) {
   .example__container {
+    max-width: 100%;
     padding: 0 110px 75px 110px;
   }
 

@@ -23,7 +23,8 @@
   }
 
   .main-header--index {
-    background: linear-gradient(to right, #ffffff 0%, #ffffff 720px, #69b738d9 720px, #69b738d9 100%);
+    max-width: 100%;
+    background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #69b738d9 50%, #69b738d9 100%);
 
     .navigation__link {
       color: #ffffff;
