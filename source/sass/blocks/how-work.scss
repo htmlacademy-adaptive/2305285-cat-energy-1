@@ -14,12 +14,27 @@
   @include list;
 }
 
+.how-work__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+  }
+}
+
 .how-work__item:not(:last-child) {
   margin-bottom: 25px;
 }
 
 .how-work__dascription {
   margin: 0;
+  margin-left: 80px;
+  margin-top: 2px;
+  margin-bottom: 4px;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,6 +56,14 @@
     row-gap: 37px;
   }
 
+  .how-work__item {
+    &::before {
+      width: 80px;
+      height: 80px;
+      margin-top: 40px;
+    }
+  }
+
   .how-work__item:not(:last-child) {
     margin-bottom: 0;
   }
@@ -48,6 +71,7 @@
   .how-work__dascription {
     font-size: 16px;
     line-height: 24px;
+    margin-left: 0;
     margin-top: 151px;
     margin-bottom: 57px;
   }

@@ -1,6 +1,5 @@
 .example__container {
   @include container;
-  background-color: #ebebeb;
   padding: 25px 20px 40px 20px;
 }
 
@@ -16,11 +15,24 @@
   margin-bottom: 20px;
 }
 
+.example__list {
+  display: flex;
+}
+
+.example__item {
+  text-align: center;
+}
+
+.example__item:not(:last-child) {
+  margin-right: 32px;
+}
+
 .example__number {
   font-family: $main-font;
   font-size: 24px;
   color: #000000;
   line-height: 24px;
+  margin-bottom: 8px;
 }
 
 .example__description {
@@ -32,8 +44,11 @@
   color: #000000;
   line-height: 20px;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 20px;
+  display: flex;
+  width: 190px;
+  justify-content: space-between;
 }
 
 .example__expenses,
@@ -43,6 +58,12 @@
 
 .example__slider-list {
   @include list;
+}
+
+@media (max-width: $mobile-width-only) {
+  .example__container {
+    background: #ebebeb;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -67,9 +88,12 @@
   }
 
   .example__list {
-    display: flex;
-    gap: 43px;
     text-align: center;
+    margin-bottom: 55px;
+  }
+
+  .example__item:not(:last-child) {
+    margin-right: 43px;
   }
 
   .example__number {
@@ -85,6 +109,8 @@
   .example__total {
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
+    flex-direction: column;
     text-align: end;
   }
 
@@ -94,6 +120,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 108px, #ebebeb 108px, #ebebeb 100%);
+  }
+
   .example__container {
     max-width: 100%;
     padding: 0 110px 75px 110px;
@@ -110,7 +140,9 @@
 
   .example__total {
     display: flex;
+    flex-direction: row;
     text-align: start;
+    width: 327px;
   }
 
   .example__expenses {

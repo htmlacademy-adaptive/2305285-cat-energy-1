@@ -22,6 +22,7 @@
 
 .field-form__label {
   display: flex;
+  flex-shrink: 0;
 }
 
 .field-form__input {
@@ -61,7 +62,11 @@
 @media (min-width: $desktop-width) {
   .field-form__container {
     display: grid;
-    grid-template-columns: repeat(2, 570px);
+    grid-template-columns: minmax(570px, 1fr) minmax(570px, 1fr);
     column-gap: 80px;
+  }
+
+  .field-form__container--data .field-form__row {
+    margin: 0;
   }
 }

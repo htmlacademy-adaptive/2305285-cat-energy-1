@@ -48,6 +48,14 @@
   justify-content: center;
 }
 
+@media (max-width: $mobile-width-only) {
+  .program-selection__result {
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+    width: 100%;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .program-selection {
     padding: 0 70px;
@@ -110,7 +118,8 @@
 
   .program-selection__container {
     display: grid;
-    grid-template-columns: repeat(2, 570px);
+    max-width: 100%;
+    grid-template-columns: minmax(570px, 1fr) minmax(570px, 1fr);
     column-gap: 80px;
     grid-template-rows: 60px 196px;
     row-gap: 66px;

@@ -11,6 +11,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .product {
+    margin-bottom: 76px;
+  }
+
   .product__list {
     grid-template-columns: minmax(245px, 1fr) minmax(245px, 1fr) minmax(245px, 1fr) minmax(245px, 1fr);
     gap: 80px;

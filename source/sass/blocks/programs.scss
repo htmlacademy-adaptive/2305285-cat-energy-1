@@ -6,7 +6,17 @@
 
 .programs__item {
   background-color: #f2f2f2;
-  padding: 30px 20px 18px 20px;
+  padding: 24px 20px 18px 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
 }
 
 .programs__item:not(:last-child) {
@@ -15,19 +25,45 @@
 
 .programs__title {
   @include subtitle;
+  line-height: 37px;
   text-transform: uppercase;
   margin-bottom: 30px;
-}
-
-.programs__description {
-  margin: 0;
-  margin-bottom: 38px;
 }
 
 .programs__link {
   @include link;
   padding-top: 4px;
   padding-bottom: 4px;
+  padding-right: 47px;
+  background-image: url("../img/arrow-link.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: $mobile-width-only) {
+  .programs__description {
+    max-height: 90px;
+    width: 240px;
+    margin: 0;
+    margin-bottom: 38px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 113px;
+      right: 0;
+      left: 0;
+      width: 240px;
+      height: 1px;
+      background: #d9d9d9;
+    }
+  }
+
+  .programs__title {
+    margin-top: 6px;
+    margin-left: 70px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -38,6 +74,13 @@
 
   .programs__item {
     padding: 77px 316px 53px 52px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 92px;
+      right: 63px;
+    }
   }
 
   .programs__title {
@@ -47,6 +90,7 @@
   }
 
   .programs__description {
+
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 48px;
@@ -54,6 +98,7 @@
 
   .programs__link {
     font-size: 20px;
+    padding-right: 57px;
   }
 }
 
@@ -69,6 +114,13 @@
 
   .programs__item {
     padding: 77px 65px 55px 52px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+    }
   }
 
   .programs__item:not(:last-child) {
@@ -76,10 +128,15 @@
   }
 
   .programs__title {
+    margin-left: 162px;
     margin-bottom: 73px;
   }
 
   .programs__description {
     margin-bottom: 23px;
+  }
+
+  .programs__link {
+    padding-right: 60px;
   }
 }

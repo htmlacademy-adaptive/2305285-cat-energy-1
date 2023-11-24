@@ -20,6 +20,7 @@
 
 @media (min-width: $desktop-width) {
   .promo__container {
+    align-items: flex-end;
     width: 245px;
     display: flex;
   }
