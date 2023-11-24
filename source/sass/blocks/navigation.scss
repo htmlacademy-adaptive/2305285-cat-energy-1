@@ -97,6 +97,21 @@
   .navigation__item {
     border-bottom: 1px solid #e6e6e6;
   }
+
+  .navigation--nojs .navigation__toggle {
+    display: none;
+  }
+
+  .main-header--nojs .navigation {
+    width: 100%;
+  }
+
+  .navigation--nojs .navigation__list {
+    display: block;
+    position: static;
+    margin-top: 15px;
+    text-align: center;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -11,6 +11,7 @@
 </head>
 
 <body class="page__body">
+  <!-- Для случая, когда JS выключен, добавить класс main-header--nojs -->
   <header class="main-header main-header--index">
     <a class="main-header__logo logo">
       <img class="logo__image logo__image--mobile" src="img/logo-mobile.svg" alt="Иконка сайта Кэт энерджи" width="33"
@@ -18,19 +19,19 @@
       <img class="logo__text" src="img/logo-text.svg" alt="Логотип сайта Кэт энерджи" width="110" height="18">
     </a>
     <!-- Для открытия/закрытия меню поменять класс на navigation--opened/navigation--closed -->
-    <nav class="navigation navigation--opened navigation--closed">
+    <nav class="navigation navigation--opened navigation--closed navigation--nojs">
       <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="navigation__list">
-          <li class="navigation__item navigation__item--current">
-            <a class="navigation__link">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
+      <ul class="navigation__list">
+        <li class="navigation__item navigation__item--current">
+          <a class="navigation__link">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
