@@ -1,9 +1,8 @@
 .contacts__cooperation {
   font-style: normal;
   line-height: 20px;
-  margin-bottom: 25px;
   display: grid;
-  grid-template-columns: 140px 140px;
+  grid-template-columns: minmax(140px, 1fr) minmax(140px, 1fr);
 }
 
 .contacts__description {
@@ -23,24 +22,22 @@
   margin: 0;
 }
 
-.contacts__map {
-  margin: 0;
-  padding: 0;
-}
-
-.contacts__image {
-  display: block;
+@media (max-width: $mobile-width-only) {
+  .contacts {
+    padding: 26px 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding: 61px 70px;
+  }
+
   .contacts__cooperation {
     margin: auto;
     display: grid;
-    grid-template-columns: 165px 160px;
+    grid-template-columns: minmax(163px, 1fr) minmax(157px, 1fr);
     gap: 19px 308px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-bottom: 60px;
   }
 
   .contacts__description {
@@ -64,12 +61,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    padding: 0;
+  }
+
   .contacts__cooperation {
     background-color: #ffffff;
     width: 595px;
     padding: 60px 78px 60px 80px;
     margin-bottom: 0;
-    grid-template-columns: 163px 157px;
     gap: 19px 87px;
   }
 
