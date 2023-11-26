@@ -8,6 +8,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:hover .copyright__image {
+    color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

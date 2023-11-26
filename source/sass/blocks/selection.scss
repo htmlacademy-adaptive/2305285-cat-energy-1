@@ -20,6 +20,10 @@
 .selection__item {
   display: flex;
   align-items: center;
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .selection__label,

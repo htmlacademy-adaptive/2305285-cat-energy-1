@@ -1,13 +1,5 @@
-// .logo {
-//   @include link;
-//   display: flex;
-//   width: 190px;
-//   justify-content: space-between;
-//   align-items: center;
-// }
-
-// @media (min-width: $tablet-width) {
-//   .logo {
-//     width: 165px;
-//   }
-// }
+.logo {
+  @include link;
+  display: flex;
+  align-items: center;
+}

@@ -38,6 +38,26 @@
   background-image: url("../img/arrow-link.svg");
   background-position: right;
   background-repeat: no-repeat;
+
+  &:hover {
+    background-image: url("../img/arrow-link-active.svg");
+    transition: all 0.1s ease;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: all 0.5s ease;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #68b738;
+    outline-offset: 2px;
+  }
 }
 
 @media (max-width: $mobile-width-only) {

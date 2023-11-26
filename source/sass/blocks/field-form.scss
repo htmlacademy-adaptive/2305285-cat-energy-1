@@ -27,6 +27,19 @@
 
 .field-form__input {
   @include input;
+  padding-right: 40px;
+}
+
+.field-form__input--email-icon {
+  background-image: url("../img/email-icon.svg");
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+}
+
+.field-form__input--phone-icon {
+  background-image: url("../img/phone-icon.svg");
+  background-position: right 12px center;
+  background-repeat: no-repeat;
 }
 
 .field-form__area {
@@ -46,6 +59,15 @@
   .field-form__input {
     font-size: 20px;
     padding: 10px 20px;
+    padding-right: 50px;
+  }
+
+  .field-form__input--email-icon {
+    background-position: right 14px center;
+  }
+
+  .field-form__input--phone-icon {
+    background-position: right 14px center;
   }
 
   .field-form__title {
@@ -64,6 +86,14 @@
     display: grid;
     grid-template-columns: minmax(570px, 1fr) minmax(570px, 1fr);
     column-gap: 80px;
+  }
+
+  .field-form__input--email-icon {
+    background-position: right 16px center;
+  }
+
+  .field-form__input--phone-icon {
+    background-position: right 16px center;
   }
 
   .field-form__container--data .field-form__row {

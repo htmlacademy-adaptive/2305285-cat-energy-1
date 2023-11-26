@@ -9,12 +9,27 @@
 }
 
 .main-header__logo {
-  @include link;
-  display: flex;
-  align-items: center;
   width: 190px;
   height: 38px;
   justify-content: space-between;
+
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &[href]:focus-visible {
+    outline: 2px solid #68b738;
+    outline-offset: 2px;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -66,6 +81,16 @@
 
     .navigation__link {
       color: #ffffff;
+
+      &:focus,
+      &:focus-visible {
+        outline: none;
+      }
+
+      &[href]:focus-visible {
+        outline: 2px solid #ffffff;
+        outline-offset: 2px;
+      }
     }
 
     .navigation__item {
