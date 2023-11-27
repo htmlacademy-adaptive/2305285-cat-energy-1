@@ -107,6 +107,10 @@
     border-bottom: 1px solid #e6e6e6;
   }
 
+  .navigation__item:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
+
   .navigation--nojs .navigation__toggle {
     display: none;
   }
@@ -118,7 +122,6 @@
   .navigation--nojs .navigation__list {
     display: block;
     position: static;
-    margin-top: 15px;
     text-align: center;
   }
 }

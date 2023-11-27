@@ -124,8 +124,8 @@
 
 @media (min-width: $desktop-width) {
   .programs__container {
-    max-width: 100%;
-    padding: 0 110px;
+    max-width: 1220px;
+    padding: 0;
     margin-bottom: 70px;
     display: grid;
     grid-template-columns: minmax(570px, 1fr) minmax(570px, 1fr);

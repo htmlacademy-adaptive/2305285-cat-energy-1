@@ -12,3 +12,7 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('navigation--opened');
   }
 });
+
+let headMain = document.querySelector('.main-header');
+
+navMain.classList.remove('main-header--nojs');

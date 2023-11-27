@@ -84,24 +84,24 @@
     outline: none;
     border-color: #444444;
 
-    .field-form__input--email-icon,
-    .field-form__input--phone-icon {
-      color: #68b738;
+    + .field-form__email-icon,
+    + .field-form__phone-icon {
+      fill: #68b738;
     }
   }
 
   &:invalid {
     border-color: #ff8282;
 
-    .field-form__input--email-icon,
-    .field-form__input--phone-icon {
-      color: #ff8282;
+    + .field-form__email-icon,
+    + .field-form__phone-icon {
+      fill: #ff8282;
     }
   }
 }
 
 @mixin container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1220px;
   margin: 0 auto;
 }

@@ -30,16 +30,16 @@
   padding-right: 40px;
 }
 
-.field-form__input--email-icon {
-  background-image: url("../img/email-icon.svg");
-  background-position: right 12px center;
-  background-repeat: no-repeat;
+.field-form__row--email-icon,
+.field-form__row--phone-icon {
+  position: relative;
 }
 
-.field-form__input--phone-icon {
-  background-image: url("../img/phone-icon.svg");
-  background-position: right 12px center;
-  background-repeat: no-repeat;
+.field-form__email-icon,
+.field-form__phone-icon {
+  position: absolute;
+  top: 13px;
+  right: 12px;
 }
 
 .field-form__area {
@@ -62,12 +62,11 @@
     padding-right: 50px;
   }
 
-  .field-form__input--email-icon {
-    background-position: right 14px center;
-  }
-
-  .field-form__input--phone-icon {
-    background-position: right 14px center;
+  .field-form__email-icon,
+  .field-form__phone-icon {
+    position: absolute;
+    top: 16px;
+    right: 14px;
   }
 
   .field-form__title {
@@ -88,12 +87,10 @@
     column-gap: 80px;
   }
 
-  .field-form__input--email-icon {
-    background-position: right 16px center;
-  }
-
-  .field-form__input--phone-icon {
-    background-position: right 16px center;
+  .field-form__email-icon,
+  .field-form__phone-icon {
+    position: absolute;
+    right: 16px;
   }
 
   .field-form__container--data .field-form__row {
