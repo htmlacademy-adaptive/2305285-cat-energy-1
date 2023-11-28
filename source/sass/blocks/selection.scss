@@ -29,15 +29,45 @@
 .selection__label,
 .selection__control {
   order: 2;
+  padding-left: 15px;
 }
 
 .selection__input {
-  border-style: none;
-  margin: 0;
-  border: 1px solid #cdcdcd;
-  margin-right: 15px;
+  position: relative;
   width: 30px;
   height: 30px;
+  appearance: none;
+  margin: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #cdcdcd;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.selection__input[type="radio"] {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  appearance: none;
+  margin: 0;
+
+  &::before {
+    content: "";
+    border-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .selection__item:not(:last-child) {

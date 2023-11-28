@@ -7,6 +7,20 @@
   @include subtitle;
   line-height: 24px;
   margin-bottom: 35px;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: "";
+    // position: absolute;
+    // width: 100vw;
+    // height: 2px;
+    // background-color: #68b738;
+    // top: 17px;
+    // left: 0;
+    // margin-left: 246px;
+    // margin-right: -20px;
+  }
 }
 
 .additionally__list {
@@ -66,6 +80,11 @@
     line-height: 36px;
     padding-left: 40px;
     margin-bottom: 80px;
+
+    &::after {
+      top: 24px;
+      left: 418px;
+    }
   }
 
   .additionally__item {

@@ -56,6 +56,7 @@
 .navigation__list {
   @include list;
   display: flex;
+  z-index: 5;
 }
 
 .navigation__item {
