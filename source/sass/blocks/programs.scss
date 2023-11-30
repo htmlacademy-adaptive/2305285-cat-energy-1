@@ -6,31 +6,19 @@
 
 .programs__item {
   background-color: #f2f2f2;
-  padding: 24px 20px 18px 20px;
+  padding: 30px 20px 18px 20px;
   position: relative;
 
-  &--slim::before {
-    content: url("../img/cat-slim.svg");
-    position: absolute;
-    display: flex;
-    width: 50px;
-    height: 50px;
-    background-color: #68b738;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
+  &--slim {
+    background-image: url("../img/cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 20px 21px;
   }
 
-  &--pro::before {
-    content: url("../img/cat-weight.svg");
-    position: absolute;
-    display: flex;
-    width: 50px;
-    height: 50px;
-    background-color: #68b738;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
+  &--pro {
+    background-image: url("../img/cat-weight.svg");
+    background-repeat: no-repeat;
+    background-position: 13px 24px;
   }
 }
 
@@ -96,8 +84,7 @@
   }
 
   .programs__title {
-    margin-top: 6px;
-    margin-left: 70px;
+    padding-left: 70px;
   }
 }
 
@@ -115,6 +102,18 @@
       height: 200px;
       top: 92px;
       right: 63px;
+    }
+
+    &--slim {
+      background-position-x: 85%;
+      background-position-y: 50%;
+      background-size: 200px 211px;
+    }
+
+    &--pro {
+      background-position-x: 92%;
+      background-position-y: 50%;
+      background-size: 268px 200px;
     }
   }
 
@@ -150,11 +149,14 @@
   .programs__item {
     padding: 77px 65px 55px 52px;
 
-    &::before {
-      width: 100px;
-      height: 100px;
-      top: 47px;
-      left: 52px;
+    &--slim {
+      background-position: 52px 41px;
+      background-size: 100px 106px;
+    }
+
+    &--pro {
+      background-position: 33px 47px;
+      background-size: 134px 100px;
     }
   }
 
@@ -163,7 +165,7 @@
   }
 
   .programs__title {
-    margin-left: 162px;
+    padding-left: 162px;
     margin-bottom: 73px;
   }
 

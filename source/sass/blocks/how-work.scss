@@ -106,35 +106,35 @@
     padding-left: 0;
     position: relative;
     display: flex;
+    padding-right: 24px;
 
     &::before {
       width: 80px;
       height: 80px;
-      margin-top: 40px;
     }
 
     &--natural::before {
       width: 80px;
       height: 80px;
-      margin-top: 40px;
+      top: 40px;
     }
 
     &--powder::before {
       width: 80px;
       height: 80px;
-      margin-top: 40px;
+      top: 40px;
     }
 
     &--food::before {
       width: 80px;
       height: 80px;
-      margin-top: 40px;
+      top: 40px;
     }
 
     &--weight::before {
       width: 80px;
       height: 80px;
-      margin-top: 40px;
+      top: 40px;
     }
 
     &::after {
@@ -147,7 +147,9 @@
       font-family: $main-font;
       font-size: 280px;
       line-height: 280px;
-      display: flex;
+      display: block;
+      min-width: 134px;
+      text-align: center;
     }
   }
 
@@ -171,6 +173,10 @@
   .how-work__container {
     margin-bottom: 70px;
     padding: 0;
+  }
+
+  .how-work__item {
+    padding-right: 7px;
   }
 
   .how-work__list {
