@@ -8,6 +8,29 @@
   line-height: 26px;
   text-transform: none;
   margin-bottom: 35px;
+  position: relative;
+  max-width: max-content;
+
+  span {
+    position: relative;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ffffff;
+    z-index: 2;
+    margin-left: -20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 300vw;
+    height: 2px;
+    background-color: #68b738;
+    top: 17px;
+    left: -100%;
+    z-index: 1;
+  }
 }
 
 .field-form__row {
@@ -73,6 +96,18 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+
+    span {
+      padding-left: 40px;
+      padding-right: 40px;
+      background-color: #ffffff;
+      z-index: 2;
+      margin-left: -40px;
+    }
+
+    &::before {
+      top: 24px;
+    }
   }
 
   .field-form__area {

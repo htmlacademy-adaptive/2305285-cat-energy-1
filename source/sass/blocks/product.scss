@@ -1,8 +1,30 @@
+.product {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.product__title {
+  @include headline;
+  margin-top: 27px;
+  margin-bottom: 40px;
+}
+
 .product__list {
   @include list;
 }
 
 @media (min-width: $tablet-width) {
+  .product {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .product__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 84px;
+  }
+
   .product__list {
     display: grid;
     grid-template-columns: minmax(324px, 1fr) minmax(324px, 1fr);
@@ -12,7 +34,16 @@
 
 @media (min-width: $desktop-width) {
   .product {
+    max-width: 1220px;
+    padding: 0;
+    margin: 0 auto;
     margin-bottom: 76px;
+  }
+
+  .product__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 84px;
   }
 
   .product__list {

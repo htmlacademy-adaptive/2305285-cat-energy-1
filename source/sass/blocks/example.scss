@@ -9,18 +9,25 @@
   margin-bottom: 40px;
 }
 
-.example__intro,
-.example__list {
+.example__intro {
   margin: 0;
   margin-bottom: 20px;
 }
 
 .example__list {
   display: flex;
+  margin: 0;
+  margin-bottom: 25px;
+  align-items: flex-start;
 }
 
 .example__item {
   text-align: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  width: 124px;
+  min-height: 56px;
+  padding-top: 15px;
 }
 
 .example__item:not(:last-child) {
@@ -36,7 +43,9 @@
 }
 
 .example__description {
-  margin: 0;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
 }
 
 .example__total {
@@ -45,10 +54,13 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0 auto;
-  margin-bottom: 20px;
   display: flex;
   width: 190px;
   justify-content: space-between;
+}
+
+.example__info {
+  margin-bottom: 20px;
 }
 
 .example__expenses,
@@ -63,6 +75,12 @@
 @media (max-width: $mobile-width-only) {
   .example__container {
     background: #ebebeb;
+  }
+
+  .example__description {
+    background-color: #eaeaea;
+    width: 77px;
+    margin: 0 auto -10px;
   }
 }
 
@@ -87,9 +105,30 @@
     margin-bottom: 55px;
   }
 
+  .example__info {
+    margin-bottom: 99px;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .example__list {
     text-align: center;
-    margin-bottom: 55px;
+    margin-bottom: 0;
+  }
+
+  .example__item {
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    width: 162px;
+  }
+
+  .example__description {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+    max-width: 135px;
+    margin: 0 auto;
+    transform: translateY(50%);
   }
 
   .example__item:not(:last-child) {
@@ -102,16 +141,13 @@
     margin-bottom: 11px;
   }
 
-  .example__description {
-    line-height: 14px;
-  }
-
   .example__total {
     font-size: 20px;
     line-height: 20px;
     margin: 0;
     flex-direction: column;
     text-align: end;
+    justify-content: center;
   }
 
   .example__expenses {
@@ -121,7 +157,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 108px, #ebebeb 108px, #ebebeb 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 108px, #f2f2f2 108px, #f2f2f2 100%);
   }
 
   .example__container {
@@ -131,6 +167,10 @@
 
   .example__title {
     margin-bottom: 146px;
+  }
+
+  .example__description {
+    background-color: #f2f2f2;
   }
 
   .example__intro {
@@ -148,5 +188,14 @@
   .example__expenses {
     margin-bottom: 0;
     margin-right: 63px;
+  }
+
+  .example__info {
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+
+  .example__list {
+    margin-bottom: 55px;
   }
 }
