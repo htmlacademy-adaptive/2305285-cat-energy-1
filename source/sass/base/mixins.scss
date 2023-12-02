@@ -9,6 +9,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+  user-select: none;
 }
 
 @mixin button {
@@ -26,6 +27,26 @@
   cursor: pointer;
   user-select: none;
   padding: 10px 44px;
+
+  &:hover {
+    background-color: #5eaa2f;
+    transition: all 0.5s ease;
+  }
+
+  &:active span {
+    opacity: 0.3;
+    transition: all 0.5s ease;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #68b738;
+    outline-offset: 2px;
+  }
 }
 
 @mixin headline {
@@ -53,10 +74,38 @@
   border: 1px solid #e7e7e7;
   margin-left: 13px;
   width: 100%;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    border-color: #444444;
+
+    + .field-form__email-icon,
+    + .field-form__phone-icon {
+      color: #68b738;
+    }
+  }
+
+  &:invalid {
+    border-color: #ff8282;
+
+    + .field-form__email-icon,
+    + .field-form__phone-icon {
+      color: #ff8282;
+    }
+  }
+
+  &:disabled + label {
+    opacity: 0.3;
+  }
 }
 
 @mixin container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1220px;
   margin: 0 auto;
 }

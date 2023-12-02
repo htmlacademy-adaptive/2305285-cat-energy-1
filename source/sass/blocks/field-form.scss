@@ -8,6 +8,29 @@
   line-height: 26px;
   text-transform: none;
   margin-bottom: 35px;
+  position: relative;
+  max-width: max-content;
+
+  span {
+    position: relative;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ffffff;
+    z-index: 2;
+    margin-left: -20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 300vw;
+    height: 2px;
+    background-color: #68b738;
+    top: 17px;
+    left: -100%;
+    z-index: 1;
+  }
 }
 
 .field-form__row {
@@ -22,15 +45,31 @@
 
 .field-form__label {
   display: flex;
+  flex-shrink: 0;
 }
 
 .field-form__input {
   @include input;
+  padding-right: 40px;
+}
+
+.field-form__row--email-icon,
+.field-form__row--phone-icon {
+  position: relative;
+}
+
+.field-form__email-icon,
+.field-form__phone-icon {
+  position: absolute;
+  top: 13px;
+  right: 12px;
 }
 
 .field-form__area {
   @include input;
   margin: 0;
+  resize: none;
+  height: 150px;
 }
 
 @media (min-width: $tablet-width) {
@@ -45,23 +84,54 @@
   .field-form__input {
     font-size: 20px;
     padding: 10px 20px;
+    padding-right: 50px;
+  }
+
+  .field-form__email-icon,
+  .field-form__phone-icon {
+    position: absolute;
+    top: 16px;
+    right: 14px;
   }
 
   .field-form__title {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+
+    span {
+      padding-left: 40px;
+      padding-right: 40px;
+      background-color: #ffffff;
+      z-index: 2;
+      margin-left: -40px;
+    }
+
+    &::before {
+      top: 24px;
+    }
   }
 
   .field-form__area {
     margin-top: 11px;
+    height: 175px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .field-form__container {
     display: grid;
-    grid-template-columns: repeat(2, 570px);
+    grid-template-columns: minmax(570px, 1fr) minmax(570px, 1fr);
     column-gap: 80px;
+  }
+
+  .field-form__email-icon,
+  .field-form__phone-icon {
+    position: absolute;
+    right: 16px;
+  }
+
+  .field-form__container--data .field-form__row {
+    margin: 0;
   }
 }

@@ -1,8 +1,7 @@
 .program-form {
   width: 100%;
   color: #ffffff;
-  background: linear-gradient(to top, #ffffff 0%, #ffffff 302px, #69b738d9 302px, #69b738d9 100%);
-  margin-bottom: 20px;
+  background: linear-gradient(to top, #ffffff 0%, #ffffff 178px, #69b738d9 178px, #69b738d9 100%);
   line-height: 14px;
 }
 
@@ -11,6 +10,7 @@
   min-width: 320px;
   padding: 0 20px;
   padding-top: 27px;
+  margin-bottom: 20px;
 }
 
 .program-form__title {
@@ -39,6 +39,7 @@
     padding-top: 65px;
     padding-left: 120px;
     padding-right: 30px;
+    margin-bottom: 0;
   }
 
   .program-form {
@@ -72,10 +73,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .program-form {
+    max-width: 100%;
+    background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #69b738d9 50%, #69b738d9 100%);
+  }
+
   .program-form__container {
-    background: linear-gradient(to right, #ffffff 0%, #ffffff 720px, #69b738d9 720px, #69b738d9 100%);
     padding-top: 110px;
-    padding-left: 190px;
+    padding-left: 80px;
     padding-right: 120px;
     margin-bottom: 82px;
   }

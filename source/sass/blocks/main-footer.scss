@@ -4,59 +4,25 @@
 
 .main-footer__container {
   @include container;
+}
+
+.main-footer__link {
   padding: 40px 20px;
 }
 
-.main-footer__container--index {
-  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 485px, #f2f2f2 485px, #f2f2f2 100%);
-}
-
-.main-footer__logo {
-  padding-top: 40px;
-  display: flex;
-}
-
-.social {
-  @include list;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
-  width: 132px;
-  justify-content: space-between;
-  margin: 0 auto;
-}
-
-.social__item {
-  width: 28px;
-  height: 22px;
-  background-color: #00ffff;
-}
-
-.copyright__link {
-  font-family: $variable-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-decoration: none;
-  color: #444444;
-}
-
 @media (max-width: $mobile-width-only) {
-  .main-footer__logo {
-    justify-content: center;
+  .main-footer__container--index {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 112px, #f2f2f2 112px, #f2f2f2 100%);
   }
 
-  .copyright__link {
-    display: flex;
-    justify-content: space-between;
+  .main-footer__logo {
+    justify-content: center;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .main-footer__container {
-    padding: 0;
-    padding-top: 60px;
-    padding-left: 30px;
-    padding-right: 30px;
+  .main-footer__container--index {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 200px, #f2f2f2 200px, #f2f2f2 100%);
   }
 
   .main-footer__logo {
@@ -65,25 +31,27 @@
 
   .main-footer__link {
     display: flex;
-    padding-top: 55px;
-    padding-bottom: 55px;
-  }
-
-  .social {
-    padding: 0;
+    padding: 55px 30px;
+    align-items: center;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-footer__container {
-    padding: 0;
-    padding-top: 0;
-    padding-left: 110px;
-    padding-right: 110px;
+  .main-footer {
+    width: 100%;
   }
 
   .main-footer__link {
-    padding-top: 66px;
-    padding-bottom: 66px;
+    max-width: 1220px;
+    padding: 66px 0 66px 0;
+    margin: 0 auto;
+  }
+
+  .main-footer__container {
+    max-width: 100%;
+  }
+
+  .main-footer__container--index {
+    background: #f2f2f2;
   }
 }
