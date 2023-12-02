@@ -47,7 +47,6 @@
 
 .selection__label,
 .selection__control {
-  order: 2;
   padding-left: 15px;
 }
 
@@ -74,7 +73,7 @@
     }
   }
 
-  &:disabled {
+  &:disabled + label {
     opacity: 0.3;
   }
 }

@@ -11,7 +11,26 @@
 .social__item {
   width: 28px;
   height: 22px;
-  background-color: #00ffff;
+}
+
+.social__link {
+  &:hover .social__link-image {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #68b738;
+    outline-offset: 2px;
+  }
 }
 
 @media (min-width: $tablet-width) {

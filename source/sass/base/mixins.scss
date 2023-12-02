@@ -98,6 +98,10 @@
       color: #ff8282;
     }
   }
+
+  &:disabled + label {
+    opacity: 0.3;
+  }
 }
 
 @mixin container {

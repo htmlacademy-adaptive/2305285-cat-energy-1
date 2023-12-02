@@ -92,15 +92,9 @@
     grid-template-rows: 38px 52px 40px;
     row-gap: 17px;
     position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      margin-left: -20px;
-      width: 100vw;
-      height: 1px;
-      background-color: #ebebeb;
-    }
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 1px solid #ebebeb;
   }
 
   .product__title-card {
@@ -134,26 +128,10 @@
     gap: 0;
     flex-direction: column;
     position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      margin-left: -20px;
-      width: 100vw;
-      height: 1px;
-      background-color: #ebebeb;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      margin-left: -20px;
-      width: 100vw;
-      height: 1px;
-      background-color: #ebebeb;
-    }
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
   }
 
   .product__title-card--more {

@@ -51,9 +51,27 @@
 
 @media (max-width: $mobile-width-only) {
   .program-selection__result {
-    border-bottom: 1px solid #d9d9d9;
-    border-top: 1px solid #d9d9d9;
-    width: 100%;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      margin-left: -20px;
+      width: 100vw;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      margin-left: -20px;
+      width: 100vw;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
   }
 }
 

@@ -1,8 +1,3 @@
-.product {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .product__title {
   @include headline;
   margin-top: 27px;
@@ -11,6 +6,12 @@
 
 .product__list {
   @include list;
+}
+
+@media (max-width: $mobile-width-only) {
+  .product__title {
+    padding-left: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {

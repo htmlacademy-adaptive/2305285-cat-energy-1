@@ -68,6 +68,8 @@
 .field-form__area {
   @include input;
   margin: 0;
+  resize: none;
+  height: 150px;
 }
 
 @media (min-width: $tablet-width) {
@@ -112,6 +114,7 @@
 
   .field-form__area {
     margin-top: 11px;
+    height: 175px;
   }
 }
 
