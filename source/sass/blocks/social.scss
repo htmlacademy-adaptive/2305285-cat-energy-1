@@ -14,8 +14,11 @@
 }
 
 .social__link {
-  &:hover .social__link-image {
-    fill: #68b738;
+  color: #666666;
+
+  &:hover {
+    color: #68b738;
+    opacity: 0.3;
   }
 
   &:active {
