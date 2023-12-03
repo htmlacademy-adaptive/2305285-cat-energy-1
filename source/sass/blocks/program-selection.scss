@@ -1,11 +1,13 @@
 .program-selection {
+  overflow-x: hidden;
+}
+
+.program-selection__form {
   font-family: $main-font;
-  padding: 0 20px;
-  padding-top: 27px;
-  margin-bottom: 32px;
   font-size: 16px;
   line-height: 18px;
-  overflow-x: hidden;
+  padding: 0 20px;
+  margin-bottom: 32px;
 }
 
 .program-selection__container {
@@ -15,6 +17,8 @@
 .program-selection__title {
   @include headline;
   line-height: 36px;
+  padding-top: 27px;
+  padding-left: 20px;
   margin-bottom: 37px;
 }
 
@@ -76,9 +80,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .program-selection {
+  .program-selection__form {
     padding: 0 70px;
-    padding-top: 50px;
     margin-bottom: 65px;
     font-size: 20px;
   }
@@ -87,6 +90,7 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 54px;
+    padding-left: 70px;
   }
 
   .program-selection__description {
@@ -129,7 +133,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .program-selection {
+  .program-selection__title {
+    max-width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 54px;
+    padding-left: 0;
+  }
+
+  .program-selection__form {
     max-width: 1220px;
     padding: 0;
     padding-top: 60px;
