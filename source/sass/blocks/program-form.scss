@@ -34,6 +34,27 @@
   padding: 10px 44px;
 }
 
+@media (max-width: $mobile-width-only) {
+  .program-form__container {
+    background-image: url("../img/index-background-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top;
+    position: relative;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 302px;
+    //   top: 0;
+    //   left: 0;
+    //   background-color: #68b738;
+    //   opacity: 0.8;
+    // }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .program-form__container {
     padding-top: 65px;
