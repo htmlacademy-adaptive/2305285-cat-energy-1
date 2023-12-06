@@ -9,10 +9,6 @@
 }
 
 .navigation__logo {
-  width: 190px;
-  height: 38px;
-  justify-content: space-between;
-
   &[href]:hover {
     opacity: 0.8;
   }
@@ -31,6 +27,12 @@
     outline-offset: 2px;
   }
 }
+
+.navigation__logo-image {
+  width: 190px;
+  height: 38px;
+}
+
 
 .navigation__toggle {
   display: block;
@@ -169,12 +171,9 @@
       width: 100%;
     }
 
-    .logo {
+    .navigation__logo-image {
       flex-grow: 1;
-
-      .logo__text {
-        margin: 0 auto;
-      }
+      margin: 0 auto;
     }
 
     .navigation__toggle {
@@ -193,7 +192,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .navigation__logo {
+  .navigation__logo-image {
     width: 175px;
     height: 50px;
   }
@@ -245,7 +244,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .navigation__logo {
+  .navigation__logo-image {
     width: 202px;
     height: 59px;
   }

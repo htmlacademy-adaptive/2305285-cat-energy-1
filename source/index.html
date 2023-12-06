@@ -18,9 +18,11 @@
     <!-- Для открытия/закрытия меню поменять класс на navigation--opened/navigation--closed -->
     <nav class="navigation navigation--closed navigation--nojs">
       <a class="navigation__logo logo">
-        <img class="logo__image logo__image--mobile" src="img/logo-mobile.svg" alt="Иконка сайта Кэт энерджи" width="33"
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="navigation__logo-image" src="img/logo-mobile.svg" alt="Иконка сайта Кэт энерджи" width="33"
           height="38">
-        <img class="logo__text" src="img/logo-text.svg" alt="Логотип сайта Кэт энерджи" width="110" height="18">
+        </picture>
       </a>
       <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="navigation__list">

@@ -1,7 +1,7 @@
 .program-form {
   width: 100%;
   color: #ffffff;
-  background: linear-gradient(to top, #ffffff 0%, #ffffff 178px, #69b738d9 178px, #69b738d9 100%);
+  background: linear-gradient(to top, #ffffff 0%, #ffffff 176px, #69b738d9 176px, #69b738d9 100%);
   line-height: 14px;
 }
 
@@ -38,20 +38,18 @@
   .program-form__container {
     background-image: url("../img/index-background-phone.jpg");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: auto 302px;
     background-position: top;
     position: relative;
 
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   width: 100%;
-    //   height: 302px;
-    //   top: 0;
-    //   left: 0;
-    //   background-color: #68b738;
-    //   opacity: 0.8;
-    // }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-phone@2x.jpg");
+      background-size: auto 302px;
+    }
+  }
+
+  .program-form__title {
+    min-height: 72px;
   }
 }
 
@@ -104,6 +102,29 @@
     padding-left: 80px;
     padding-right: 120px;
     margin-bottom: 82px;
+    position: relative;
+
+    &::before {
+      content: url("../img/index-background-desktop.jpg");
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: -156px;
+      margin-right: -110px;
+    }
+
+    // @media (min-resolution: 2dppx) {
+    //   &::before {
+    //     content: url("../img/index-background-desktop@2x.jpg");
+    //     position: absolute;
+    //     width: 1041px;
+    //     height: 694px;
+    //     top: 0;
+    //     right: 0;
+    //     margin-top: -156px;
+    //     margin-right: -430px;
+    //   }
+    // }
   }
 
   .program-form__link {

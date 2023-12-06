@@ -16,29 +16,15 @@
     background-color: #68b738;
     width: 280px;
     height: 290px;
-    background-image: url("../img/cat-promo.png");
+    background-image: url("../img/cat-promo-phone.jpg");
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
-  }
-
-  .promo__description {
-    font-size: 16px;
-    line-height: 20px;
-    margin: 0;
-    text-align: center;
     position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 280px;
-      height: 290px;
-      background-color: #68b738;
-      opacity: 0.8;
-      z-index: 1;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-promo-phone@2x.jpg");
+      background-size: 280px auto;
     }
 
     &::after {
@@ -48,17 +34,16 @@
       height: 80px;
       top: 59px;
       left: 101px;
-      z-index: 3;
     }
+  }
 
-    span {
-      position: absolute;
-      width: 161px;
-      top: 187px;
-      left: 59px;
-      color: #ffffff;
-      z-index: 2;
-    }
+  .promo__description {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 160px;
+    padding-top: 187px;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
@@ -67,27 +52,15 @@
     background-color: #68b738;
     width: 707px;
     height: 200px;
-    background-image: url("../img/cat-promo.png");
-    background-position: left -300px;
+    background-image: url("../img/cat-promo-tablet.jpg");
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 707px 707px;
     margin: 0 auto;
-  }
-
-  .promo__description {
-    text-align: start;
     position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 707px;
-      height: 200px;
-      background-color: #68b738;
-      opacity: 0.8;
-      z-index: 1;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-promo-tablet@2x.jpg");
+      background-size: 707px auto;
     }
 
     &::after {
@@ -97,17 +70,14 @@
       height: 83px;
       top: 57px;
       left: 77px;
-      z-index: 3;
     }
+  }
 
-    span {
-      position: absolute;
-      width: 161px;
-      top: 71px;
-      left: 421px;
-      color: #ffffff;
-      z-index: 2;
-    }
+  .promo__description {
+    max-width: 161px;
+    padding-top: 71px;
+    margin-left: 421px;
+    text-align: left;
   }
 }
 
@@ -116,46 +86,28 @@
     width: 245px;
     height: 288px;
     background-color: #68b738;
-    background-image: url("../img/cat-promo.png");
-    background-position: right;
+    background-image: url("../img/cat-promo-desktop.jpg");
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 290px 290px;
     margin: 0 auto;
-  }
-
-  .promo__description {
     position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 245px;
-      height: 288px;
-      background-color: #68b738;
-      opacity: 0.8;
-      z-index: 1;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-promo-desktop@2x.jpg");
+      background-size: 245px auto;
     }
 
     &::after {
       content: url("../img/icon-gift.svg");
       position: absolute;
-      width: 80px;
-      height: 83px;
       top: 56px;
       left: 83px;
-      z-index: 3;
     }
+  }
 
-    span {
-      position: absolute;
-      width: 161px;
-      top: 185px;
-      left: 42px;
-      color: #ffffff;
-      z-index: 2;
-      text-align: center;
-    }
+  .promo__description {
+    padding-top: 185px;
+    margin: 0 auto;
+    text-align: center;
   }
 }
