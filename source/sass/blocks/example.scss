@@ -70,6 +70,12 @@
 
 .example__slider-list {
   @include list;
+  width: 280px;
+  display: flex;
+}
+
+.example__slider-item {
+  width: 140px;
 }
 
 @media (max-width: $mobile-width-only) {
