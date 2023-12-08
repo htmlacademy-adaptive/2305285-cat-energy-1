@@ -123,15 +123,28 @@
         <div class="example__slider">
           <ul class="example__slider-list">
             <li class="example__slider-item">
-              <img class="example__slider-image" src="img/cat-before-phone.png" alt="Кот до снижения веса" width="280"
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
+                <img class="example__slider-image" src="img/cat-before-phone.png" alt="Кот до снижения веса" srcset="img/cat-before-phone@2x.png 2x" width="280"
                 height="256">
+              </picture>
             </li>
             <li class="example__slider-item">
-              <img class="example__slider-image" src="img/cat-after-phone.png" alt="Кот после снижения веса" width="280"
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
+                <img class="example__slider-image" src="img/cat-after-phone.png" alt="Кот после снижения веса" width="280"
                 height="256">
+              </picture>
             </li>
           </ul>
-          <button class="example__slider-control" type="button"><span class="visually-hidden">Показать разницу</span></button>
+          <button class="example__slider-control" type="button">
+            <span class="visually-hidden">Показать разницу</span>
+            <svg class="example__slider-control-image" aria-hidden="true" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="38" height="38" rx="19" fill="white"/>
+              <rect x="1" y="1" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 11L8 20L16 29V11Z" fill="currentColor"/>
+              <path d="M32 20L24 11V29L32 20Z" fill="currentColor"/>></svg>
+          </button>
         </div>
       </div>
     </section>
