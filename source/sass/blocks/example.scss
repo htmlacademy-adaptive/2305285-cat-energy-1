@@ -135,24 +135,25 @@
 
   &:hover {
     background-color: #68b738;
+
+    svg {
+      color: #68b738;
+    }
   }
 
   &:active {
     background-color: #5eaa2f;
+
+    svg {
+      color: #5eaa2f;
+    }
   }
 }
 
 .example__slider-control-image {
   margin-left: -18px;
   color: #666666;
-
-  &:hover {
-    color: #68b738;
-  }
-
-  &:active {
-    color: #5eaa2f;
-  }
+  fill: none;
 }
 
 @media (max-width: $mobile-width-only) {
