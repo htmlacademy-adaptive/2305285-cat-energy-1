@@ -47,7 +47,7 @@
     background-position: top;
     position: relative;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 1.5dppx) {
       background-image: url("../img/index-background-phone@2x.jpg");
       background-size: auto 302px;
     }
@@ -131,7 +131,7 @@
       margin-right: -110px;
     }
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: 1.5dppx) {
       &::before {
         content: "";
         background-image: url("../img/index-background-desktop@2x.jpg");
