@@ -16,16 +16,16 @@
     background-color: #68b738;
     width: 280px;
     height: 290px;
-    background-image: url("../img/cat-promo-phone.jpg");
+    background-image: image-set(
+      url("../img/cat-promo-phone.webp") type("image/webp") 1x,
+      url("../img/cat-promo-phone@2x.webp") type("image/webp") 2x,
+      url("../img/cat-promo-phone.jpg") type("image/jpg") 1x,
+      url("../img/cat-promo-phone.jpg@2x.jpg") type("image/jpg") 2x
+    );
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
     position: relative;
-
-    @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/cat-promo-phone@2x.jpg");
-      background-size: 280px auto;
-    }
 
     &::after {
       content: url("../img/icon-gift.svg");
@@ -52,16 +52,16 @@
     background-color: #68b738;
     width: 707px;
     height: 200px;
-    background-image: url("../img/cat-promo-tablet.jpg");
+    background-image: image-set(
+      url("../img/cat-promo-tablet.webp") type("image/webp") 1x,
+      url("../img/cat-promo-tablet@2x.webp") type("image/webp") 2x,
+      url("../img/cat-promo-tablet.jpg") type("image/jpg") 1x,
+      url("../img/cat-promo-tablet@2x.jpg") type("image/jpg") 2x
+    );
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
     position: relative;
-
-    @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/cat-promo-tablet@2x.jpg");
-      background-size: 707px auto;
-    }
 
     &::after {
       content: url("../img/icon-gift.svg");
@@ -86,16 +86,16 @@
     width: 245px;
     height: 288px;
     background-color: #68b738;
-    background-image: url("../img/cat-promo-desktop.jpg");
+    background-image: image-set(
+      url("../img/cat-promo-desktop.webp") type("image/webp") 1x,
+      url("../img/cat-promo-desktop@2x.webp") type("image/webp") 2x,
+      url("../img/cat-promo-desktop.jpg") type("image/jpg") 1x,
+      url("../img/cat-promo-desktop@2x.jpg") type("image/jpg") 2x
+    );
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
     position: relative;
-
-    @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/cat-promo-desktop@2x.jpg");
-      background-size: 245px auto;
-    }
 
     &::after {
       content: url("../img/icon-gift.svg");

@@ -41,16 +41,16 @@
 
 @media (max-width: $mobile-width-only) {
   .program-form__container {
-    background-image: url("../img/index-background-phone.jpg");
+    background-image: image-set(
+      url("../img/index-background-phone.webp") type("image/webp") 1x,
+      url("../img/index-background-phone@2x.webp") type("image/webp") 2x,
+      url("../img/index-background-phone.jpg") type("image/jpg") 1x,
+      url("../img/index-background-phone@2x.jpg") type("image/jpg") 2x
+    );
     background-repeat: no-repeat;
     background-size: auto 302px;
     background-position: top;
     position: relative;
-
-    @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/index-background-phone@2x.jpg");
-      background-size: auto 302px;
-    }
   }
 
   .program-form__title {
@@ -121,7 +121,12 @@
 
     &::before {
       content: "";
-      background-image: url("../img/index-background-desktop.jpg");
+      background-image: image-set(
+      url("../img/index-background-desktop.webp") type("image/webp") 1x,
+      url("../img/index-background-desktop@2x.webp") type("image/webp") 2x,
+      url("../img/index-background-desktop.jpg") type("image/jpg") 1x,
+      url("../img/index-background-desktop@2x.jpg") type("image/jpg") 2x
+      );
       width: 720px;
       height: 695px;
       position: absolute;
@@ -129,14 +134,6 @@
       right: 0;
       margin-top: -159px;
       margin-right: -110px;
-    }
-
-    @media (min-resolution: 1.5dppx) {
-      &::before {
-        content: "";
-        background-image: url("../img/index-background-desktop@2x.jpg");
-        background-size: 720px 695px;
-      }
     }
   }
 
