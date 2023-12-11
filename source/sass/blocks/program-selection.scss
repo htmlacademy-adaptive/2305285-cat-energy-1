@@ -27,7 +27,7 @@
 }
 
 .program-selection__optionally {
-  margin-bottom: 34px;
+  margin-bottom: 33px;
 }
 
 .program-selection__description {
@@ -54,6 +54,10 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .program-selection__description {
+    max-width: 226px;
+  }
+
   .program-selection__result {
     position: relative;
 
@@ -82,7 +86,7 @@
 @media (min-width: $tablet-width) {
   .program-selection__form {
     padding: 0 70px;
-    margin-bottom: 65px;
+    margin-bottom: 61px;
     font-size: 20px;
   }
 
@@ -91,6 +95,7 @@
     line-height: 60px;
     margin-bottom: 54px;
     padding-left: 70px;
+    padding-top: 40px;
   }
 
   .program-selection__description {
@@ -110,16 +115,17 @@
   }
 
   .program-selection__optionally {
-    margin-bottom: 65px;
+    margin-bottom: 52px;
   }
 
   .program-selection__button {
     width: 285px;
     padding-top: 14px;
     padding-bottom: 14px;
+    font-size: 20px;
     line-height: 26px;
     margin-bottom: 0;
-    margin-right: 60px;
+    margin-right: 64px;
   }
 
   .program-selection__container-button {
@@ -136,14 +142,14 @@
   .program-selection__title {
     max-width: 1220px;
     margin: 0 auto;
-    margin-bottom: 54px;
     padding-left: 0;
+    padding-top: 31px;
   }
 
   .program-selection__form {
     max-width: 1220px;
     padding: 0;
-    padding-top: 60px;
+    padding-top: 56px;
     margin: 0 auto;
     margin-bottom: 79px;
   }
@@ -177,6 +183,10 @@
 
   .program-selection__comment {
     margin-bottom: 70px;
+  }
+
+  .program-selection__optionally {
+    margin-bottom: 60px;
   }
 
   .program-selection__button {
