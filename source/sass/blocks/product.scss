@@ -1,7 +1,8 @@
 .product__title {
   @include headline;
-  margin-top: 36px;
-  margin-bottom: 50px;
+  margin-top: 27px;
+  margin-bottom: 40px;
+  line-height: 36px;
 }
 
 .product__list {
