@@ -1,9 +1,8 @@
 .social {
   @include list;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 19px 74px;
   display: flex;
-  width: 132px;
+  width: 280px;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -38,5 +37,8 @@
 @media (min-width: $tablet-width) {
   .social {
     padding: 0;
+    width: 132px;
+    margin: 0;
+    margin-left: 46px;
   }
 }

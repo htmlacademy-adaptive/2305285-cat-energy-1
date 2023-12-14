@@ -9,7 +9,7 @@
 .selection__title {
   @include subtitle;
   line-height: 26px;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
   position: relative;
   max-width: max-content;
 
@@ -30,7 +30,7 @@
     height: 2px;
     background-color: #68b738;
     top: 17px;
-    left: -1000%;
+    left: -100%;
     z-index: 1;
   }
 }

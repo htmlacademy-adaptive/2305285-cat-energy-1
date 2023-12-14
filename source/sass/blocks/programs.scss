@@ -35,9 +35,11 @@
 
 .programs__link {
   @include link;
+  font-size: 16px;
+  line-height: 16px;
   padding-top: 4px;
   padding-bottom: 4px;
-  padding-right: 47px;
+  padding-right: 48px;
   background-image: url("../img/arrow-link.svg");
   background-position: right;
   background-repeat: no-repeat;
@@ -65,16 +67,15 @@
 
 @media (max-width: $mobile-width-only) {
   .programs__description {
-    max-height: 90px;
     width: 240px;
     margin: 0;
-    margin-bottom: 38px;
+    margin-bottom: 41px;
     position: relative;
 
     &::after {
       content: "";
       position: absolute;
-      top: 113px;
+      bottom: -22px;
       right: 0;
       left: 0;
       width: 240px;
@@ -91,11 +92,11 @@
 @media (min-width: $tablet-width) {
   .programs__container {
     padding: 0 30px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
   }
 
   .programs__item {
-    padding: 77px 316px 53px 52px;
+    padding: 77px 316px 58px 52px;
 
     &::before {
       width: 200px;
@@ -105,16 +106,20 @@
     }
 
     &--slim {
-      background-position-x: 85%;
-      background-position-y: 50%;
+      background-position-x: 87%;
+      background-position-y: 51%;
       background-size: 200px 211px;
     }
 
     &--pro {
-      background-position-x: 92%;
-      background-position-y: 50%;
+      background-position-x: 94%;
+      background-position-y: 52%;
       background-size: 268px 200px;
     }
+  }
+
+  .programs__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 
   .programs__title {
@@ -124,10 +129,10 @@
   }
 
   .programs__description {
-
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 48px;
+    margin: 0;
+    margin-bottom: 60px;
   }
 
   .programs__link {
@@ -147,7 +152,7 @@
   }
 
   .programs__item {
-    padding: 77px 65px 55px 52px;
+    padding: 79px 27px 60px 52px;
 
     &--slim {
       background-position: 52px 41px;
@@ -170,7 +175,9 @@
   }
 
   .programs__description {
-    margin-bottom: 23px;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 35px;
   }
 
   .programs__link {
