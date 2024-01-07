@@ -92,13 +92,14 @@
   width: 140px;
   height: 256px;
   overflow: hidden;
+  z-index: 2;
 }
 
 .example__slider-item--after {
   position: absolute;
   top: 0;
-  left: 140px;
-  width: 140px;
+  left: 0;
+  width: 280px;
   height: 256px;
   overflow: hidden;
 }
@@ -133,6 +134,7 @@
   top: 0;
   left: 50%;
   margin-left: -2px;
+  z-index: 3;
 
   &:hover {
     background-color: #68b738;

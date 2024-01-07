@@ -106,14 +106,15 @@
     }
 
     &--slim {
-      background-position-x: 87%;
-      background-position-y: 51%;
-      background-size: 200px 211px;
+      background-position-x: 87.5%;
+      background-position-y: 48%;
+      background-size: 200px 220px;
     }
 
     &--pro {
-      background-position-x: 94%;
-      background-position-y: 52%;
+      background-image: url("../img/cat-weight-tablet.svg");
+      background-position-x: 93%;
+      background-position-y: 53%;
       background-size: 268px 200px;
     }
   }
