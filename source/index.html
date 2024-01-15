@@ -50,6 +50,9 @@
         <h2 class="program-form__title">Функциональное питание для котов</h2>
         <p class="program-form__slogan">Занялся собой? Займись котом!</p>
         <picture>
+          <source media="(min-width: 1280px)" type="image/webp" srcset="img/cat-food-desktop.webp 1x, img/cat-food-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" type="image/webp" srcset="img/cat-food-tablet.webp 1x, img/cat-food-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/cat-food-phone.webp 1x, img/cat-food-phone@2x.webp 2x">
           <source media="(min-width: 1280px)" srcset="img/cat-food-desktop.png 1x, img/cat-food-desktop@2x.png 2x" width="552" height="499">
           <source media="(min-width: 768px)" srcset="img/cat-food-tablet.png 1x, img/cat-food-tablet@2x.png 2x" width="709" height="609">
           <img class="program-form__image" src="img/cat-food-phone.png" width="280" height="270" srcset="img/cat-food-phone@2x.png 2x" alt="Банка функционального питания для котов">
@@ -161,6 +164,17 @@
         </address>
         <div class="contacts__map">
           <iframe class="contacts__map-image" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1700904812749!5m2!1sru!2sru" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта города с адресом магазина"></iframe>
+          <noscript>
+            <picture>
+              <source media="(min-width: 1280px)" type="image/webp" srcset="img/map-desktop.webp 1x, img/map-desktopp@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/map-phone.webp 1x, img/map-phone0@2x.webp 2x">
+              <source media="(min-width: 1280px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x" width="1440" height="400">
+              <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x" width="768" height="400">
+              <img class="contacts__map-noscript" src="img/map-phone.png" alt="Cat Energy на карте"
+                srcset="img/map-phone@2x.png 2x" width="320" height="362">
+            </picture>
+          </noscript>
         </div>
       </div>
 

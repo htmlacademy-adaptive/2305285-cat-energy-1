@@ -72,6 +72,12 @@
   .contacts__map {
     height: 400px;
   }
+
+  .contacts__map-noscript {
+    margin: 0 auto;
+    width: 768px;
+    height: 400px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -97,6 +103,11 @@
   .contacts__map {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
+    overflow: hidden;
+  }
+
+  .contacts__map-noscript {
+    width: 1440px;
   }
 
   .contacts__addres,
