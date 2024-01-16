@@ -1,7 +1,7 @@
 .program-form {
   width: 100%;
   color: #ffffff;
-  background: linear-gradient(to top, #ffffff 0%, #ffffff 180px, #69b738d9 180px, #69b738d9 100%);
+  background: linear-gradient(to top, #ffffff 0%, #ffffff 180px, #62a53a 180px, #62a53a 100%);
   line-height: 14px;
 }
 
@@ -111,7 +111,7 @@
 @media (min-width: $desktop-width) {
   .program-form {
     max-width: 100%;
-    background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #69b738d9 50%, #69b738d9 100%);
+    padding-top: 159px;
   }
 
   .program-form__container {
@@ -123,6 +123,7 @@
 
     &::before {
       content: "";
+      background: #62a53a;
       background-image: image-set(
         url("../img/index-background-desktop.webp") type("image/webp") 1x,
         url("../img/index-background-desktop@2x.webp") type("image/webp") 2x,
