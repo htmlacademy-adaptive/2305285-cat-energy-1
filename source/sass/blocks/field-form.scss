@@ -51,6 +51,7 @@
 .field-form__input {
   @include input;
   padding-right: 40px;
+  appearance: textfield;
 }
 
 .field-form__row--email-icon,
