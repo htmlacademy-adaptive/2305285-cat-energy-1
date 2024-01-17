@@ -328,11 +328,17 @@
           <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8</p>
           <p class="contacts__city">Санкт-Петербург</p>
         </address>
-        <div class="contacts__map">
-          <iframe class="contacts__map-image"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1700904812749!5m2!1sru!2sru"
-            width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" title="Карта города с адресом магазина"></iframe>
+        <div class="contacts__map contacts__map--nojs">
+          <iframe class="contacts__map-image" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1700904812749!5m2!1sru!2sru" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта города с адресом магазина"></iframe>
+          <picture>
+            <source media="(min-width: 1280px)" type="image/webp" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-phone.webp 1x, img/map-phone@2x.webp 2x">
+            <source media="(min-width: 1280px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x" width="1440" height="400">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x" width="768" height="400">
+            <img class="contacts__map-noscript" src="img/map-phone.png" alt="Cat Energy на карте"
+            srcset="img/map-phone@2x.png 2x" width="320" height="362">
+          </picture>
         </div>
       </div>
 
