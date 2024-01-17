@@ -159,9 +159,9 @@
     max-width: 100%;
     grid-template-columns: minmax(570px, 1fr) minmax(570px, 1fr);
     column-gap: 80px;
-    grid-template-rows: 60px 196px;
+    grid-template-rows: auto auto;
     row-gap: 66px;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 
   .program-selection__description {

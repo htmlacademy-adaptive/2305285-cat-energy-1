@@ -38,33 +38,5 @@
   .main-header--index {
     max-width: 100%;
     position: absolute;
-
-    .navigation__logo {
-      width: 232px;
-    }
-
-    .navigation__link {
-      color: #ffffff;
-
-      &:focus,
-      &:focus-visible {
-        outline: none;
-      }
-
-      &[href]:focus-visible {
-        outline: 2px solid #ffffff;
-        outline-offset: 2px;
-      }
-    }
-
-    .navigation__item {
-      &--current {
-        position: relative;
-
-        &::after {
-          background: #ffffff;
-        }
-      }
-    }
   }
 }

@@ -13,6 +13,6 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-let headMain = document.querySelector('.main-header');
+let map = document.querySelector('.contacts__map');
 
-navMain.classList.remove('main-header--nojs');
+map.classList.remove('contacts__map--nojs');

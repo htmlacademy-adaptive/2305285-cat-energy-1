@@ -33,7 +33,6 @@
   height: 38px;
 }
 
-
 .navigation__toggle {
   display: block;
   position: relative;
@@ -259,5 +258,35 @@
 
   .navigation__item:not(:last-child) {
     margin-right: 33px;
+  }
+
+  .navigation--index {
+    .navigation__logo {
+      width: 232px;
+    }
+
+    .navigation__link {
+      color: #ffffff;
+
+      &:focus,
+      &:focus-visible {
+        outline: none;
+      }
+
+      &[href]:focus-visible {
+        outline: 2px solid #ffffff;
+        outline-offset: 2px;
+      }
+    }
+
+    .navigation__item {
+      &--current {
+        position: relative;
+
+        &::after {
+          background: #ffffff;
+        }
+      }
+    }
   }
 }
