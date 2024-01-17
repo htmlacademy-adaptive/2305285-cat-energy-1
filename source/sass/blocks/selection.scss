@@ -26,11 +26,11 @@
   &::before {
     content: "";
     position: absolute;
-    width: 300vw;
+    width: 400vw;
     height: 2px;
     background-color: #68b738;
     top: 17px;
-    left: -100%;
+    left: -200%;
     z-index: 1;
   }
 }

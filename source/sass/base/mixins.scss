@@ -74,6 +74,17 @@
   border: 1px solid #e7e7e7;
   margin-left: 13px;
   width: 100%;
+  appearance: none;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  &[type="number"] {
+    appearance: textfield;
+  }
 
   &:hover {
     border-color: #cdcdcd;

@@ -70,7 +70,7 @@
   }
 
   .contacts__map {
-    height: 400px;
+    min-height: 400px;
   }
 }
 
@@ -97,6 +97,7 @@
   .contacts__map {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
+    overflow: hidden;
   }
 
   .contacts__addres,

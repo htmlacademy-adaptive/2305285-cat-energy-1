@@ -11,6 +11,8 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon-apple-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -48,6 +50,9 @@
         <h2 class="program-form__title">Функциональное питание для котов</h2>
         <p class="program-form__slogan">Занялся собой? Займись котом!</p>
         <picture>
+          <source media="(min-width: 1280px)" type="image/webp" srcset="img/cat-food-desktop.webp 1x, img/cat-food-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" type="image/webp" srcset="img/cat-food-tablet.webp 1x, img/cat-food-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/cat-food-phone.webp 1x, img/cat-food-phone@2x.webp 2x">
           <source media="(min-width: 1280px)" srcset="img/cat-food-desktop.png 1x, img/cat-food-desktop@2x.png 2x" width="552" height="499">
           <source media="(min-width: 768px)" srcset="img/cat-food-tablet.png 1x, img/cat-food-tablet@2x.png 2x" width="709" height="609">
           <img class="program-form__image" src="img/cat-food-phone.png" width="280" height="270" srcset="img/cat-food-phone@2x.png 2x" alt="Банка функционального питания для котов">
