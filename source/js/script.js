@@ -15,4 +15,4 @@ navToggle.addEventListener('click', function () {
 
 let map = document.querySelector('.contacts__map');
 
-map.classList.remove('.contacts__map--nojs');
+map.classList.remove('contacts__map--nojs');
